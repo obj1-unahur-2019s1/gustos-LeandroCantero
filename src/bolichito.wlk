@@ -1,4 +1,5 @@
 import objetos.*
+import personas.*
 
 object bolichito {
 	var objetoEnMostrador
@@ -18,14 +19,14 @@ object bolichito {
 	}
 	
 	method estaDesequilibrado() {
-		// completar
+		return objetoEnMostrador.peso() > objetoEnVidriera.peso()
 	}
 	
 	method tieneAlgoDeColor(color) {
-		// completar
+		return objetoEnMostrador.color() == color or objetoEnVidriera.color() == color
 	}
 
 	method puedeOfrecerleAlgoA(persona) {
-		// completar
+		return persona.leGusta(objetoEnMostrador) or persona.leGusta(objetoEnVidriera)
 	}
 }
