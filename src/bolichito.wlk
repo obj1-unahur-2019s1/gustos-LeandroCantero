@@ -26,6 +26,10 @@ object bolichito {
 	method tieneAlgoDeColor(color) {
 		return objetoEnMostrador.color() == color or objetoEnVidriera.color() == color
 	}
+	
+	method puedeMejorar(){
+		return self.estaDesequilibrado() or self.esMonocromatico()
+	}
 
 	method puedeOfrecerleAlgoA(persona) {
 		return persona.leGusta(objetoEnMostrador) or persona.leGusta(objetoEnVidriera)
