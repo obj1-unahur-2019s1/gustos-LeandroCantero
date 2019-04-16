@@ -9,9 +9,10 @@ object bolichito {
 	method ponerEnVidriera(objeto) { objetoEnVidriera = objeto }
 	
 	method esBrillante() { 
-		const elDeMostradorBrilla = true   // implementar
-		const elDeVidrieraBrilla = true   // implementar
-		return elDeMostradorBrilla and elDeVidrieraBrilla
+		//const elDeMostradorBrilla = true   // implementar
+		//const elDeVidrieraBrilla = true   // implementar
+		//return elDeMostradorBrilla and elDeVidrieraBrilla
+		return objetoEnMostrador.brilla() and objetoEnVidriera.brilla()
 	}
 	
 	method esMonocromatico() {
